@@ -7,7 +7,7 @@ Acest proiect a fost creat cu ajutorul Parcel. Pentru familiarizare și configur
 1. Asigură-te că pe PC este instalată versiunea LTS Node.js.
    [Descarcă și instalează](https://nodejs.org/en/) dacă este necesar.
 2. Clonează acest repository.
-3. Schimbă numele folderului din `parcel-project-template` în numele proiectului tău.
+3. Schimbă numele folderului din `goit-js-hw-08` în numele proiectului tău.
 4. Creează un repository nou și gol pe GitHub.
 5. Deschide proiectul în VSCode, pornește terminalul și conectează proiectul cu repository-ul GitHub
    [conform instrucțiunilor](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
@@ -62,7 +62,7 @@ Mai multe informații despre stare pot fi obținute dând clic pe pictogramă ș
 ### Pagină live
 
 După un timp, de obicei câteva minute, pagina live poate fi vizualizată la adresa specificată în proprietatea editată `homepage`. De exemplu, iată linkul către versiunea live pentru acest repository
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+[https://danretegan.github.io/goit-js-hw-08](https://danretegan.github.io/goit-js-hw-08).
 
 Dacă se deschide o pagină goală, asigură-te că fila `Console` nu conține erori legate de căile incorecte ale fișierelor proCSS și JS din proiect (**404**). Probabil că este greșită valoarea proprietății `homepage` sau scriptului `build` în fișierul `package.json`.
 
