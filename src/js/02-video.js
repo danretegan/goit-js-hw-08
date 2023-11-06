@@ -1,3 +1,13 @@
+// Exercițiul 2 - video player
+// În HTML există <iframe> pentru player-ul Vimeo. Scrieți un script care va salva timpul curent de redare a videoclipului în spațiul de stocare local și, când pagina este reîncărcată, se va continua redarea videoclipului din acel moment.
+// Citiți documentația pentru librăria player-ului Vimeo.
+// Adăugați biblioteca ca dependență de proiect prin npm.
+// Inițializați player-ul în fișierul script așa cum este descris în secțiunea pre-existing player, dar nu uitaiți faptul că player-ul din proiect este adăugat ca pachet npm și nu printr-un CDN.
+// Citiți documentația metodei on() și urmărește evenimentul de timeupdate, folosind pentru a actualizați timpul de redare.
+// Salvați timpul de redare în local storage. "videoplayer-current-time" va fi cheia de stocare.
+// La reîncărcarea paginii, utilizați metoda setCurrentTime() pentru a relua redarea de la poziţia salvată.
+// Adaugați la proiect librăria lodash.throttle și faceți astfel încât timpul de redare să fie actualizat în spațiul de stocare nu mai mult de o dată pe secundă.
+
 // Importăm funcția throttle din pachetul 'lodash.throttle':
 import throttle from 'lodash.throttle';
 

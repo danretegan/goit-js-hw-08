@@ -1,3 +1,13 @@
+// Exercițiul 1 - librăria SimpleLightbox
+// Adăugați librăria SimpleLightbox ca dependență de proiect, folosind npm (link-urile CDN nu mai sunt necesare).
+// Folosiți codul JavaScript de la tema anterioară, dar refactorizat. Asigurați-vă că librăria a fost instalată prin npm (sintaxa import/export).
+// Pentru a conecta codul CSS la proiect, trebuie să adăugați încă un import pe lângă cel descris în documentație.
+
+// // Descris în documentație
+// import SimpleLightbox from "simplelightbox";
+// // Import suplimentar de stil
+// import "simplelightbox/dist/simple-lightbox.min.css";
+
 // Import descris în documentație:
 import SimpleLightbox from 'simplelightbox';
 // Import suplimentar de stil:

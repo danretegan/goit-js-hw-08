@@ -1,3 +1,10 @@
+// Exercițiul 3 - formularul pentru feedback
+// Codul HTML are structura unui formular. Scrieți un script care va salva valorile câmpurilor în local storage atunci când utilizatorul introduce un caracter.
+// Urmăriți în formular evenimentul de input și la fiecare modificare să se salveze local un obiect cu câmpurile email și message, unde vor fi stocate valorile curente ale câmpurilor din formular. Cheia obiectului va fi "feedback-form-state"
+// La încărcarea paginii, verificați starea storage-ului, iar dacă există date salvate, completați câmpurile formularului cu aceste date. În caz contrar, câmpurile vor fi goale.
+// Când se trimite formularul, la evenimentul submit, ștergeți câmpurile din local storage și afișați în consolă obiectul cu câmpurile email, message și valorile lor curente.
+// Asigurați-vă că datele vor fi stocate și actualizate doar o dată la 500 de milisecunde. Pentru a face acest lucru, adăugați la proiect și utilizați librăria lodash.throttle.
+
 import throttle from 'lodash.throttle';
 
 // Obținem referințele către elementele specifice din documentul HTML astfel, ulterior, vom putea manipula aceste elemente (accesam valori introduse de utilizator sau adăugam EventListener):
