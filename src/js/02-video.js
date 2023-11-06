@@ -26,7 +26,7 @@ const saveTimeToLocalStorage = throttle(time => {
   localStorage.setItem('videoplayer-current-time', time);
 }, 1000); // Aplicăm throttle pentru a limita frecvența de apel a funcției la fiecare 1000 de milisecunde (1 secundă).
 
-// Adaugăm un ascultător pentru evenimentul 'timeupdate' al playerului:
+// Adaugăm un EventListener pentru evenimentul 'timeupdate' al playerului:
 player.on('timeupdate', function (data) {
   // Obținem timpul curent al videoplayer-ului din datele evenimentului:
   const currentTime = data.seconds;
@@ -34,7 +34,7 @@ player.on('timeupdate', function (data) {
   saveTimeToLocalStorage(currentTime);
 });
 
-// Adaugăm un ascultător pentru evenimentul 'load' al ferestrei:
+// Adaugăm un EventListener pentru evenimentul 'load' al ferestrei:
 window.onload = () => {
   // Obținem timpul salvat anterior din localStorage:
   const storedTime = localStorage.getItem('videoplayer-current-time');

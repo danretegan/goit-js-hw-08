@@ -26,10 +26,10 @@ const saveToLocalStorage = throttle(() => {
   );
 }, 500); // Aplicăm throttle pentru a limita frecvența de apel a funcției la fiecare 500 de milisecunde.
 
-// Adăugam un ascultător pentru evenimentul 'input' care declanșează funcția saveToLocalStorage:
+// Adăugam un EventListener pentru evenimentul 'input' care declanșează funcția saveToLocalStorage:
 form.addEventListener('input', saveToLocalStorage);
 
-// Adăugam un ascultător pentru evenimentul 'load' al ferestrei, care restaurează starea anterioară a formularului din localStorage:
+// Adăugam un EventListener pentru evenimentul 'load' al ferestrei, care restaurează starea anterioară a formularului din localStorage:
 window.addEventListener('load', () => {
   // Verificăm dacă există o stare salvată în localStorage:
   const savedState = JSON.parse(localStorage.getItem('feedback-form-state'));
@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
   }
 });
 
-// Adaugăm un ascultător pentru evenimentul 'submit' al formularului:
+// Adaugăm un EventListener pentru evenimentul 'submit' al formularului:
 form.addEventListener('submit', event => {
   // Previne comportamentul implicit al formularului:
   event.preventDefault();
