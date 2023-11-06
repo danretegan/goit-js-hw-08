@@ -1,6 +1,6 @@
-// Descris în documentație
+// Import descris în documentație:
 import SimpleLightbox from 'simplelightbox';
-// Import suplimentar de stil
+// Import suplimentar de stil:
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 // Add imports above this line
@@ -16,7 +16,7 @@ const listEl = document.querySelector('.gallery');
 galleryItems.forEach(item => {
   const listItemEl = document.createElement('li');
   listItemEl.classList.add('gallery__item');
-  listItemEl.style.listStyle = 'none'; // ascundem punctele de acces
+  listItemEl.style.listStyle = 'none'; // eliminam marcatorul implicit (• bullet) din listă.
   listItemEl.innerHTML = `<a 
         class='gallery__link' 
         href='${item.original}'>
